@@ -1,6 +1,8 @@
 package math.problems;
 
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Pattern {
 
@@ -11,42 +13,53 @@ public class Pattern {
 		 *
 		 */
 				//Taking rows value from the user
-		for (int i = 1; i <= 1; i++)
-		{
-			for (int j = 100; j >= i; j--)
-			{
-				System.out.print(j+",");
-			}
+		int count = 1, a = 0;
+		int num = 100;
+		List<String> storePattern = new ArrayList<>();
+		int[] array = new int[40];
 
-			System.out.println();
-		}
-
-		for (int i=1; i<=1; i++) {
-			for (int j=100; j>=i; j--)
-			{
-				System.out.print(j+",");
-			}
-			System.out.println();
-		}
-
-		System.out.println("*newStyle*");
-
-				for (int i = 1; i <= 100; i++)
-				{
-					for (int j = 100; j >= i; j--)
-					{
-						System.out.print(j);
-					}
-
-					System.out.println();
-				}
-
-
-
+		while (num > 0) {
+			for (int i = 0; i < 10; i++) {
+				System.out.print(num+",");
+				array[a] = num;
+				num -= count;
+				a++;
 
 			}
+			count++;
 		}
+		System.out.println(" ");
+	}
 
+
+}
+
+//		for (int i=1; i<=1; i++) {
+//			for (int j=100; j>=i; j--)
+//			{
+//				System.out.print(j+",");
+//			}
+//			System.out.println();
+//		}
+//
+//		System.out.println("*newStyle*");
+//
+//				for (int i = 1; i <= 100; i++)
+//				{
+//					for (int j = 100; j >= i; j--)
+//					{
+//						System.out.print(j);
+//					}
+//
+//					System.out.println();
+//				}
+//
+//
+//
+//
+//			}
+//		}
+//
 
 
 

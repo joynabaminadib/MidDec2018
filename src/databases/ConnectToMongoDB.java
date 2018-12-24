@@ -38,6 +38,9 @@ public class ConnectToMongoDB {
         return profile + " has been registered";
     }
 
+    public static void insertIntoToMongoDB(List<Student> seleniumStudents, String qtp) {
+    }
+
     public String insertIntoMongoDB(List<Student> student,String profileName){
         MongoDatabase mongoDatabase = connectToMongoDB();
         MongoCollection myCollection = mongoDatabase.getCollection(profileName);

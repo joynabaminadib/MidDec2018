@@ -1,6 +1,10 @@
 package json.parser;
 
-public class CnnAPI {
+import org.seleniumhq.jetty9.util.Promise;
+
+import static java.lang.System.err;
+
+
     /*
       You can get API_KEY from this below link. Once you have the API_KEY, you can fetch the top-headlines news.
       https://newsapi.org/s/cnn-api
@@ -37,4 +41,3 @@ public class CnnAPI {
 	   Store into choice of your database and retrieve.
 
      */
-}
